@@ -11,9 +11,7 @@ qqTitle := "QQ ahk_exe QQ.exe"
 WinWait qqTitle
 WinWait wxTitle
 
-WinActivate wxTitle
-WinWaitActive wxTitle
-Send "{Enter}"
+ControlSend "{Enter}", , wxTitle
 
 Sleep 6000
 
